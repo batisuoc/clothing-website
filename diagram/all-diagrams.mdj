@@ -1,0 +1,112 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFuFZtPV7u8SjY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "ClassDiagram1"
+				},
+				{
+					"_type": "UMLUseCaseDiagram",
+					"_id": "AAAAAAFuFZuIWru/THs=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "UseCaseDiagram1"
+				},
+				{
+					"_type": "ERDDataModel",
+					"_id": "AAAAAAFuFZvSyLvHVTc=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Data Model1",
+					"ownedElements": [
+						{
+							"_type": "ERDDiagram",
+							"_id": "AAAAAAFuFZvSybvIQJk=",
+							"_parent": {
+								"$ref": "AAAAAAFuFZvSyLvHVTc="
+							},
+							"name": "ERDDiagram1",
+							"ownedViews": [
+								{
+									"_type": "ERDEntityView",
+									"_id": "AAAAAAFuFZ+xCMgiTzA=",
+									"_parent": {
+										"$ref": "AAAAAAFuFZvSybvIQJk="
+									},
+									"model": {
+										"$ref": "AAAAAAFuFZ+xCMggf5s="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAFuFZ+xCcgjmO4=",
+											"_parent": {
+												"$ref": "AAAAAAFuFZ+xCMgiTzA="
+											},
+											"font": "Arial;13;1",
+											"left": 184,
+											"top": 253,
+											"width": 53.341796875,
+											"height": 13,
+											"text": "Entity1"
+										},
+										{
+											"_type": "ERDColumnCompartmentView",
+											"_id": "AAAAAAFuFZ+xCcgkRwM=",
+											"_parent": {
+												"$ref": "AAAAAAFuFZ+xCMgiTzA="
+											},
+											"model": {
+												"$ref": "AAAAAAFuFZ+xCMggf5s="
+											},
+											"font": "Arial;13;0",
+											"left": 184,
+											"top": 271,
+											"width": 53.341796875,
+											"height": 10
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 184,
+									"top": 248,
+									"width": 53.341796875,
+									"height": 33,
+									"nameLabel": {
+										"$ref": "AAAAAAFuFZ+xCcgjmO4="
+									},
+									"columnCompartment": {
+										"$ref": "AAAAAAFuFZ+xCcgkRwM="
+									}
+								}
+							]
+						},
+						{
+							"_type": "ERDEntity",
+							"_id": "AAAAAAFuFZ+xCMggf5s=",
+							"_parent": {
+								"$ref": "AAAAAAFuFZvSyLvHVTc="
+							},
+							"name": "Entity1"
+						}
+					]
+				}
+			]
+		}
+	]
+}
