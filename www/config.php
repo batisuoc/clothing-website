@@ -9,6 +9,7 @@ define('DB_PORT', '');
 
 //Path
 define('URL', 'http://localhost:8888/');
+define('RESOURCES_LINK', 'http://localhost:8888/public/');
 define('LIBS', 'libs/');
 
 /**
