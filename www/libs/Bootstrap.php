@@ -60,7 +60,7 @@ class Bootstrap
         } else {
             //Hien thi trang error roi dung lai
             $this->error();
-            return false;
+            die();
         }
     }
 

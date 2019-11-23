@@ -11,7 +11,7 @@ class Login extends Controller
 
 	function index()
 	{
-		$this->view->render('login/index');
+		$this->view->render('login/index', true);
 	}
 
 	function run()
@@ -19,5 +19,3 @@ class Login extends Controller
 		$this->model->run();
 	}
 }
-
-?>

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * 
  */
@@ -7,7 +8,7 @@ class Index extends Controller
 	function __construct()
 	{
 		parent::__construct();
-		// echo "This is index controller.";
+		Auth::handleAdminLogin();
 	}
 
 	function index()
@@ -15,12 +16,10 @@ class Index extends Controller
 		$this->view->render('index/index');
 	}
 
-	function details()
+	function logout()
 	{
-		echo "THIS IS DETAILS FUNCTION";
-		$this->view->render('index/index');
+		Session::destroy();
+		header('location: ../login');
+		exit();
 	}
-
 }
-
-?>

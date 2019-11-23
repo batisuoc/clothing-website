@@ -22,9 +22,8 @@ class Login_Model extends Model
 		if ($result != false) {
 			Session::init();
 			//Neu da dang nhap thi gan mot bien session co gia tri bang true
-			Session::set('role', $result['role']);
 			Session::set('loggedIn', true);
-			header('location: ../dashboard');
+			header('location: ../index');
 		} else {
 			header('location: ../login');
 		}
