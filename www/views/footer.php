@@ -54,12 +54,12 @@
 					</div>
 					<div class="instagrm">
 						<ul>
-							<li><a href="#"><img src="images/gallery/01.jpg" alt=""></a></li>
-							<li><a href="#"><img src="images/gallery/02.jpg" alt=""></a></li>
-							<li><a href="#"><img src="images/gallery/03.jpg" alt=""></a></li>
-							<li><a href="#"><img src="images/gallery/04.jpg" alt=""></a></li>
-							<li><a href="#"><img src="images/gallery/05.jpg" alt=""></a></li>
-							<li><a href="#"><img src="images/gallery/06.jpg" alt=""></a></li>
+							<li><a href="#"><img src="<?= CLIENT_RESOURCES ?>images/gallery/01.jpg" alt=""></a></li>
+							<li><a href="#"><img src="<?= CLIENT_RESOURCES ?>images/gallery/02.jpg" alt=""></a></li>
+							<li><a href="#"><img src="<?= CLIENT_RESOURCES ?>images/gallery/03.jpg" alt=""></a></li>
+							<li><a href="#"><img src="<?= CLIENT_RESOURCES ?>images/gallery/04.jpg" alt=""></a></li>
+							<li><a href="#"><img src="<?= CLIENT_RESOURCES ?>images/gallery/05.jpg" alt=""></a></li>
+							<li><a href="#"><img src="<?= CLIENT_RESOURCES ?>images/gallery/06.jpg" alt=""></a></li>
 						</ul>
 					</div>
 				</div>
@@ -112,19 +112,19 @@
 					<div class="col-md-6 col-sm-6 col-xs-12">
 						<ul class="payment-support text-right">
 							<li>
-								<a href="#"><img src="images/icons/pay1.png" alt="" /></a>
+								<a href="#"><img src="<?= CLIENT_RESOURCES ?>images/icons/pay1.png" alt="" /></a>
 							</li>
 							<li>
-								<a href="#"><img src="images/icons/pay2.png" alt="" /></a>
+								<a href="#"><img src="<?= CLIENT_RESOURCES ?>images/icons/pay2.png" alt="" /></a>
 							</li>
 							<li>
-								<a href="#"><img src="images/icons/pay3.png" alt="" /></a>
+								<a href="#"><img src="<?= CLIENT_RESOURCES ?>images/icons/pay3.png" alt="" /></a>
 							</li>
 							<li>
-								<a href="#"><img src="images/icons/pay4.png" alt="" /></a>
+								<a href="#"><img src="<?= CLIENT_RESOURCES ?>images/icons/pay4.png" alt="" /></a>
 							</li>
 							<li>
-								<a href="#"><img src="images/icons/pay5.png" alt="" /></a>
+								<a href="#"><img src="<?= CLIENT_RESOURCES ?>images/icons/pay5.png" alt="" /></a>
 							</li>
 						</ul>
 					</div>
@@ -139,18 +139,18 @@
 <!-- Placed js at the end of the document so the pages load faster -->
 
 <!-- jquery latest version -->
-<script src="<?= URL ?>public/js/vendor/jquery-1.12.0.min.js"></script>
+<script src="<?= CLIENT_RESOURCES ?>js/vendor/jquery-1.12.0.min.js"></script>
 <!-- Bootstrap framework js -->
-<script src="<?= URL ?>public/js/bootstrap.min.js"></script>
+<script src="<?= CLIENT_RESOURCES ?>js/bootstrap.min.js"></script>
 <!-- Slider js -->
-<script src="<?= URL ?>public/js/slider/jquery.nivo.slider.pack.js"></script>
-<script src="<?= URL ?>public/js/slider/nivo-active.js"></script>
+<script src="<?= CLIENT_RESOURCES ?>js/slider/jquery.nivo.slider.pack.js"></script>
+<script src="<?= CLIENT_RESOURCES ?>js/slider/nivo-active.js"></script>
 <!-- counterUp-->
-<script src="<?= URL ?>public/js/jquery.countdown.min.js"></script>
+<script src="<?= CLIENT_RESOURCES ?>js/jquery.countdown.min.js"></script>
 <!-- All js plugins included in this file. -->
-<script src="<?= URL ?>public/js/plugins.js"></script>
+<script src="<?= CLIENT_RESOURCES ?>js/plugins.js"></script>
 <!-- Main js file that contents all jQuery plugins activation. -->
-<script src="<?= URL ?>public/js/main.js"></script>
+<script src="<?= CLIENT_RESOURCES ?>js/main.js"></script>
 
 </body>
 

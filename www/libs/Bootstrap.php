@@ -6,7 +6,7 @@
 class Bootstrap
 {
 
-    public function __construct()
+    public function __construct($role)
     {
 
         $url = isset($_GET['url']) ? $_GET['url'] : null;
@@ -19,14 +19,14 @@ class Bootstrap
 
         //Neu khong co action nao thi chuyen ve trang index
         if (empty($url[0])) {
-            require 'controllers/index.php';
+            require $role . 'controllers/index.php';
             $controller = new Index();
             $controller->index();
             return false;
         }
 
         //Khoi tao controller theo phan tu thu nhat tren mang url
-        $file = 'controllers/' . $url[0] . '.php';
+        $file = $role . 'controllers/' . $url[0] . '.php';
         if (file_exists($file)) {
             require $file;
         } else {
@@ -64,7 +64,7 @@ class Bootstrap
 
     public function error()
     {
-        require 'controllers/errors.php';
+        require $role . 'controllers/errors.php';
         $controller = new Errors();
         $controller->index();
         return false;

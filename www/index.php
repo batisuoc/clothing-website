@@ -9,4 +9,4 @@ function __autoload($class)
     require LIBS . $class . ".php";
 }
 
-$app = new Bootstrap();
+$app = new Bootstrap("");

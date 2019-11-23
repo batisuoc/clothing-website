@@ -9,8 +9,10 @@ define('DB_PORT', '');
 
 //Path
 define('URL', 'http://localhost:8888/');
-define('RESOURCES_LINK', 'http://localhost:8888/public/');
+define('CLIENT_RESOURCES', '../public/template/client/');
+define('ADMIN_RESOURCES', '../../public/template/admin/');
 define('LIBS', 'libs/');
+define('ADMIN_LIBS', '../libs/');
 
 /**
  *  Hash key

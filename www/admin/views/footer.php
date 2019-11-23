@@ -1,156 +1,60 @@
-<!-- /content -->
-<!-- footer area start-->
-<div class="footer-area ptb-50">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-				<div class="single-footer contact-us">
-					<div class="footer-title uppercase">
-						<h5>Contact US</h5>
-					</div>
-					<ul>
-						<li>
-							<div class="contact-icon"> <i class="zmdi zmdi-pin-drop"></i> </div>
-							<div class="contact-text">
-								<p><span>777/a Seventh Street,</span> <span>Rampura, Bonosri</span></p>
-							</div>
-						</li>
-						<li>
-							<div class="contact-icon"> <i class="zmdi zmdi-email-open"></i> </div>
-							<div class="contact-text">
-								<p><span><a href="#">company@gmail.com</a></span> <span><a href="#">admin@devitems.com</a></span></p>
-							</div>
-						</li>
-						<li>
-							<div class="contact-icon"> <i class="zmdi zmdi-phone-paused"></i> </div>
-							<div class="contact-text">
-								<p><span>+11 (019) 25184203</span> <span>+11 (018) 50950555</span></p>
-							</div>
-						</li>
-					</ul>
-				</div>
+<!-- Sticky Footer -->
+<footer class="sticky-footer">
+	<div class="container my-auto">
+		<div class="copyright text-center my-auto">
+			<span>Copyright © Your Website 2019</span>
+		</div>
+	</div>
+</footer>
+
+</div>
+<!-- /.content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+	<i class="fas fa-angle-up"></i>
+</a>
+
+<!-- Logout Modal-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+				<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
 			</div>
-			<div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
-				<div class="single-footer informaton-area">
-					<div class="footer-title uppercase">
-						<h5>Information</h5>
-					</div>
-					<div class="informatoin">
-						<ul>
-							<li><a href="#">My Account</a></li>
-							<li><a href="#">Order History</a></li>
-							<li><a href="#">Wishlist</a></li>
-							<li><a href="#">Returnes</a></li>
-							<li><a href="#">Private Policy</a></li>
-							<li><a href="#">Site Map</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 hidden-sm col-xs-12">
-				<div class="single-footer instagrm-area">
-					<div class="footer-title uppercase">
-						<h5>InstaGram</h5>
-					</div>
-					<div class="instagrm">
-						<ul>
-							<li><a href="#"><img src="images/gallery/01.jpg" alt=""></a></li>
-							<li><a href="#"><img src="images/gallery/02.jpg" alt=""></a></li>
-							<li><a href="#"><img src="images/gallery/03.jpg" alt=""></a></li>
-							<li><a href="#"><img src="images/gallery/04.jpg" alt=""></a></li>
-							<li><a href="#"><img src="images/gallery/05.jpg" alt=""></a></li>
-							<li><a href="#"><img src="images/gallery/06.jpg" alt=""></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-4 col-lg-offset-1 col-xs-12">
-				<div class="single-footer newslatter-area">
-					<div class="footer-title uppercase">
-						<h5>Get Newsletters</h5>
-					</div>
-					<div class="newslatter">
-						<form action="#" method="post">
-							<div class="input-box pos-rltv">
-								<input placeholder="Type Your Email hear" type="text">
-								<a href="#">
-									<i class="zmdi zmdi-arrow-right"></i>
-								</a>
-							</div>
-						</form>
-						<div class="social-icon socile-icon-style-3 mt-40">
-							<div class="footer-title uppercase">
-								<h5>Social Network</h5>
-							</div>
-							<ul>
-								<li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
-								<li><a href="#"><i class="zmdi zmdi-linkedin"></i></a></li>
-								<li><a href="#"><i class="zmdi zmdi-pinterest"></i></a></li>
-								<li><a href="#"><i class="zmdi zmdi-google"></i></a></li>
-								<li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
+			<div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+			<div class="modal-footer">
+				<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+				<a class="btn btn-primary" href="login.html">Logout</a>
 			</div>
 		</div>
 	</div>
 </div>
-<!--footer area start-->
 
-<!--footer bottom area start-->
-<div class="footer-bottom global-table">
-	<div class="global-row">
-		<div class="global-cell">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-sm-6 col-xs-12">
-						<div class="copyrigth"> Copyright @
-							<a href="devitems.com">Devitems</a> All right reserved
-						</div>
-					</div>
-					<div class="col-md-6 col-sm-6 col-xs-12">
-						<ul class="payment-support text-right">
-							<li>
-								<a href="#"><img src="images/icons/pay1.png" alt="" /></a>
-							</li>
-							<li>
-								<a href="#"><img src="images/icons/pay2.png" alt="" /></a>
-							</li>
-							<li>
-								<a href="#"><img src="images/icons/pay3.png" alt="" /></a>
-							</li>
-							<li>
-								<a href="#"><img src="images/icons/pay4.png" alt="" /></a>
-							</li>
-							<li>
-								<a href="#"><img src="images/icons/pay5.png" alt="" /></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!--footer bottom area end-->
-</div>
+<!-- Bootstrap core JavaScript-->
+<script src="<?= ADMIN_RESOURCES ?>vendor/jquery/jquery.min.js"></script>
+<script src="<?= ADMIN_RESOURCES ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<!-- Placed js at the end of the document so the pages load faster -->
+<!-- Core plugin JavaScript-->
+<script src="<?= ADMIN_RESOURCES ?>vendor/jquery-easing/jquery.easing.min.js"></script>
 
-<!-- jquery latest version -->
-<script src="<?= URL ?>public/js/vendor/jquery-1.12.0.min.js"></script>
-<!-- Bootstrap framework js -->
-<script src="<?= URL ?>public/js/bootstrap.min.js"></script>
-<!-- Slider js -->
-<script src="<?= URL ?>public/js/slider/jquery.nivo.slider.pack.js"></script>
-<script src="<?= URL ?>public/js/slider/nivo-active.js"></script>
-<!-- counterUp-->
-<script src="<?= URL ?>public/js/jquery.countdown.min.js"></script>
-<!-- All js plugins included in this file. -->
-<script src="<?= URL ?>public/js/plugins.js"></script>
-<!-- Main js file that contents all jQuery plugins activation. -->
-<script src="<?= URL ?>public/js/main.js"></script>
+<!-- Page level plugin JavaScript-->
+<script src="<?= ADMIN_RESOURCES ?>vendor/chart.js/Chart.min.js"></script>
+<script src="<?= ADMIN_RESOURCES ?>vendor/datatables/jquery.dataTables.js"></script>
+<script src="<?= ADMIN_RESOURCES ?>vendor/datatables/dataTables.bootstrap4.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="<?= ADMIN_RESOURCES ?>js/sb-admin.min.js"></script>
+
+<!-- Demo scripts for this page-->
+<script src="<?= ADMIN_RESOURCES ?>js/demo/datatables-demo.js"></script>
+<script src="<?= ADMIN_RESOURCES ?>js/demo/chart-area-demo.js"></script>
 
 </body>
 
