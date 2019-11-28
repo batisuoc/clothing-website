@@ -3,17 +3,19 @@
      <ol class="breadcrumb">
          <div class="container">
              <h3 class="float-left">QUẢN LÝ SẢN PHẨM</h3>
-             <button type="button" class="btn btn-primary float-right">Thêm sản phẩm</button>
+             <a href="product/addProductPage" class="btn btn-primary float-right" style="color: white;">Thêm sản phẩm</a>
          </div>
          <!-- ./ container -->
      </ol>
+     <!-- ./ Breadcrumbs-->
      <table class="table">
          <thead>
              <tr>
                  <th scope="col">#</th>
-                 <th scope="col">First</th>
-                 <th scope="col">Last</th>
-                 <th scope="col">Handle</th>
+                 <th scope="col">Picture</th>
+                 <th scope="col">Name</th>
+                 <th scope="col">Amount</th>
+                 <th scope="col">&nbsp;</th>
              </tr>
          </thead>
          <tbody>
@@ -21,19 +23,11 @@
                  <th scope="row">1</th>
                  <td>Mark</td>
                  <td>Otto</td>
-                 <td>@mdo</td>
-             </tr>
-             <tr>
-                 <th scope="row">2</th>
-                 <td>Jacob</td>
-                 <td>Thornton</td>
-                 <td>@fat</td>
-             </tr>
-             <tr>
-                 <th scope="row">3</th>
-                 <td>Larry</td>
-                 <td>the Bird</td>
-                 <td>@twitter</td>
+                 <td>&nbsp;</td>
+                 <td>
+                     <button class="btn btn-primary">Chỉnh sửa</button>
+                     <button><img src="<?= PUBLIC_RESOURCES ?>/images/icons/trash-icon.png" width="27px" height="27px" /></button>
+                 </td>
              </tr>
          </tbody>
      </table>

@@ -18,7 +18,7 @@ class Auth
     {
         session_start();
         //Kiem tra dang nhap
-        $logged = $_SESSION['loggedIn'];
+        $logged = $_SESSION['adminLoggedIn'];
         if ($logged == false) {
             session_destroy();
             header('location: ../admin/login');

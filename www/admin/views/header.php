@@ -12,13 +12,17 @@
 
 	<!-- Custom fonts for this template-->
 	<link href="<?= ADMIN_RESOURCES ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-
 	<!-- Page level plugin CSS-->
 	<link href="<?= ADMIN_RESOURCES ?>vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-
 	<!-- Custom styles for this template-->
 	<link href="<?= ADMIN_RESOURCES ?>css/sb-admin.css" rel="stylesheet">
 
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
