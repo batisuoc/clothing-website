@@ -18,19 +18,25 @@ class Product extends Controller
 
     function insertProduct()
     {
-        echo $_POST['product_name'] . "<br />";
-        echo $_POST['calc_unit'] . "<br />";
-        echo $_POST['product_type'] . "<br />";
-        echo $_POST['product_prize'] . "<br />";
-        echo $_POST['product_amount'] . "<br />";
-        echo $_POST['product_descript'] . "<br />";
-        echo $_POST['product_image_link'] . "<br />";
+        $product_array_values = array(
+            'product_name' => $_POST['product_name'],
+            'product_calc_unit' => $_POST['calc_unit'],
+            'product_type' => $_POST['product_type'],
+            'product_prize' => $_POST['product_prize'],
+            'product_amount' => $_POST['product_amount'],
+            'product_description' => $_POST['product_descript'],
+            'product_pic' => "images/product/" . $_POST['product_image_link']
+        );
+        $this->model->insertProduct($product_array_values);
 
-        $product_sizes = $_POST['product_size'];
-        foreach ($product_sizes as $product_size) {
-            echo $product_size . "<br />";
+        $result = $this->model->getProductID($_POST['product_name']);
+
+        if ($result != false) {
+            $product_sizes = $_POST['product_size'];
+            if (count($product_sizes) > 0) {
+                $this->model->insertProductSize($result['product_id'], $product_sizes);
+            }
         }
-
-        die();
+        header('location: ../product');
     }
 }

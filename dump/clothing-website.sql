@@ -80,7 +80,7 @@ CREATE TABLE staff (
 CREATE TABLE product (
   product_id INT PRIMARY KEY AUTO_INCREMENT,
   product_name VARCHAR
-(256) not null,
+(256) not null UNIQUE,
   product_type INT not null,
   product_pic VARCHAR
 (256),
