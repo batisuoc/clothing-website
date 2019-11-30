@@ -1,22 +1,23 @@
 <?php
 class Product extends Controller
 {
-    function __construct()
+    public function __construct()
     {
         parent::__construct();
     }
 
-    function index()
+    public function index()
     {
+        $this->view->productList = $this->model->getAllProducts();
         $this->view->render('product/index');
     }
 
-    function addProductPage()
+    public function addProductPage()
     {
         $this->view->render('product/addProductPage');
     }
 
-    function insertProduct()
+    public function insertProduct()
     {
         $product_array_values = array(
             'product_name' => $_POST['product_name'],
@@ -25,7 +26,7 @@ class Product extends Controller
             'product_prize' => $_POST['product_prize'],
             'product_amount' => $_POST['product_amount'],
             'product_description' => $_POST['product_descript'],
-            'product_pic' => "images/product/" . $_POST['product_image_link']
+            'product_pic' => "images/product/" . $_POST['product_image_link'],
         );
         $this->model->insertProduct($product_array_values);
 
@@ -36,7 +37,10 @@ class Product extends Controller
             if (count($product_sizes) > 0) {
                 $this->model->insertProductSize($result['product_id'], $product_sizes);
             }
+            // echo '<script>';
+            // echo 'alert("Thêm sản phẩm thành công !!!");';
+            // echo '</script>';
         }
-        header('location: ../product');
+        header('location: ../addProductPage');
     }
 }
