@@ -17,6 +17,11 @@ class Product extends Controller
         $this->view->render('product/addProductPage');
     }
 
+    public function editProduct($id)
+    {
+
+    }
+
     public function insertProduct()
     {
         $product_array_values = array(
@@ -37,10 +42,10 @@ class Product extends Controller
             if (count($product_sizes) > 0) {
                 $this->model->insertProductSize($result['product_id'], $product_sizes);
             }
-            // echo '<script>';
-            // echo 'alert("Thêm sản phẩm thành công !!!");';
-            // echo '</script>';
+            echo '<script>';
+            echo 'alert("Thêm sản phẩm thành công !!!");';
+            echo '</script>';
         }
-        header('location: ../addProductPage');
+        header('location: ../product');
     }
 }

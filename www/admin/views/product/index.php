@@ -2,33 +2,36 @@
      <!-- Breadcrumbs-->
      <ol class="breadcrumb">
          <div class="container">
-             <h3 class="float-left">QUẢN LÝ SẢN PHẨM</h3>
+             <h3 class="float-left" style="vertical-align: middle;">QUẢN LÝ SẢN PHẨM</h3>
              <a href="product/addProductPage" class="btn btn-primary float-right" style="color: white;">Thêm sản phẩm</a>
          </div>
          <!-- ./ container -->
      </ol>
      <!-- ./ Breadcrumbs-->
-     <table class="table">
+     <table class="table" id="list-product">
          <thead>
              <tr>
-                 <th scope="col">#</th>
-                 <th scope="col">Picture</th>
-                 <th scope="col">Name</th>
-                 <th scope="col">Amount</th>
+                 <th style="font-size: 20px; vertical-align: middle; text-align: center" scope="col">ID</th>
+                 <th style="font-size: 20px; vertical-align: middle; text-align: center" scope="col">Picture</th>
+                 <th style="font-size: 20px; vertical-align: middle; text-align: center" scope="col">Name</th>
+                 <th style="font-size: 20px; vertical-align: middle; text-align: center" scope="col">Amount</th>
                  <th scope="col">&nbsp;</th>
              </tr>
          </thead>
          <tbody>
-             <tr>
-                 <th scope="row">1</th>
-                 <td>Mark</td>
-                 <td>Otto</td>
-                 <td>&nbsp;</td>
-                 <td>
-                     <button class="btn btn-primary">Chỉnh sửa</button>
-                     <button><img src="<?= PUBLIC_RESOURCES ?>/images/icons/trash-icon.png" width="27px" height="27px" /></button>
+         <?php foreach ($this->productList as $key => $value) {?>
+            <tr>
+                 <th style="font-size: 20px; vertical-align: middle; text-align: center" scope="row"><?=$value['product_id']?></th>
+                 <td><img style="max-height:200px; max-width:200px; overflow: hidden; vertical-align: middle; text-align: center" src="../../public/<?=$value['product_pic']?>" /></td>
+                 <td style="font-size: 20px; vertical-align: middle; text-align: center"><?=$value['product_name']?></td>
+                 <td style="font-size: 20px; vertical-align: middle; text-align: center"><?=$value['product_amount']?></td>
+                 <td style="vertical-align: middle; text-align: center">
+                     <a class="btn btn-primary" href="#">Chỉnh sửa</a>
+                     <button><img src="<?=PUBLIC_RESOURCES?>/images/icons/trash-icon.png" width="40px" height="40px" /></button>
                  </td>
              </tr>
+         <?php }?>
+
          </tbody>
      </table>
  </div>
