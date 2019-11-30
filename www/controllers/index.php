@@ -15,12 +15,6 @@ class Index extends Controller
 		$this->view->render('index/index');
 	}
 
-	function details()
-	{
-		echo "THIS IS DETAILS FUNCTION";
-		$this->view->render('index/index');
-	}
+	
 
 }
-
-?>

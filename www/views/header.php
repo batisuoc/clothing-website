@@ -42,8 +42,8 @@
 						<div class="col-md-3 col-sm-3 col-xs-6">
 							<div class="login-register-area">
 								<ul>
-									<li><a href="#">Login</a></li>
-									<li><a href="#">Register</a></li>
+									<li><a href="#">Đăng nhập</a></li>
+									<li><a href="#">Đăng kí</a></li>
 								</ul>
 							</div>
 						</div>
@@ -51,11 +51,11 @@
 							<div class="social-search-area text-center">
 								<div class="social-icon socile-icon-style-2">
 									<ul>
-										<li><a href="#" title="facebook"><i class="fa fa-facebook"></i></a> </li>
-										<li><a href="#" title="twitter"><i class="fa fa-twitter"></i></a> </li>
+										<li><a href="https://www.facebook.com/1mkstore/" title="facebook"><i class="fa fa-facebook"></i></a> </li>
+										<!-- <li><a href="#" title="twitter"><i class="fa fa-twitter"></i></a> </li>
 										<li> <a href="#" title="dribble"><i class="fa fa-dribbble"></i></a></li>
 										<li> <a href="#" title="behance"><i class="fa fa-behance"></i></a> </li>
-										<li> <a href="#" title="rss"><i class="fa fa-rss"></i></a> </li>
+										<li> <a href="#" title="rss"><i class="fa fa-rss"></i></a> </li> -->
 									</ul>
 								</div>
 							</div>
@@ -63,7 +63,7 @@
 						<div class="col-md-3 col-sm-3 col-xs-6">
 							<div class="cart-currency-area login-register-area text-right">
 								<ul>
-									<li>
+									<!-- <li>
 										<div class="header-currency">
 											<select>
 												<option value="1">USD</option>
@@ -72,10 +72,16 @@
 												<option value="4">Dinar</option>
 											</select>
 										</div>
-									</li>
+									</li> -->
 									<li>
 										<div class="header-cart">
-											<div class="cart-icon"> <a href="#">Cart<i class="zmdi zmdi-shopping-cart"></i></a> <span>2</span> </div>
+											<div class="cart-icon">
+												<a href="#">
+													Giỏ hàng
+													<i class="zmdi zmdi-shopping-cart"></i>
+												</a>
+												<span>2</span>
+											</div>
 											<div class="cart-content-wraper">
 												<div class="cart-single-wraper">
 													<div class="cart-img">
@@ -119,15 +125,18 @@
 				<div class="container">
 					<div class="full-width-mega-dropdown">
 						<div class="row">
-							<div class="col-md-2 col-sm-2">
-								<div class="logo ptb-20"><a href="<?= URL ?>index">
-										<img src="<?= CLIENT_RESOURCES ?>images/logo/logo.png" alt="main logo"></a>
+							<div class="col-md-12 col-sm-12">
+								<div class="logo ptb-20" style="text-align:center;">
+									<a href="<?= URL ?>index">
+										<img style="max-height: 44px;" src="<?= CLIENT_RESOURCES ?>images/logo/mk_store_logo.jpg" alt="main logo">
+									</a>
 								</div>
 							</div>
-							<div class="col-md-7 col-sm-10 hidden-xs">
+							<!-- <div class="col-md-7 col-sm-10 hidden-xs">
 								<nav id="primary-menu">
 									<ul class="main-menu">
-										<li class="current"><a class="active" href="index.html">Home</a>
+										<li class="current">
+											<a class="active" href="index.html">Home</a>
 											<ul class="dropdown">
 												<li><a class="active" href="index.html">Home One</a></li>
 												<li><a href="index-2.html">Home Two</a></li>
@@ -262,8 +271,8 @@
 										<li><a href="about-us.html">ABOUT</a></li>
 									</ul>
 								</nav>
-							</div>
-							<div class="col-md-3 hidden-sm hidden-xs">
+							</div> -->
+							<!-- <div class="col-md-3 hidden-sm hidden-xs">
 								<div class="search-box global-table">
 									<div class="global-row">
 										<div class="global-cell">
@@ -276,10 +285,10 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 
 							<!-- mobile-menu-area start -->
-							<div class="mobile-menu-area">
+							<!-- <div class="mobile-menu-area">
 								<div class="container">
 									<div class="row">
 										<div class="col-xs-12">
@@ -382,7 +391,7 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 							<!--mobile menu area end-->
 						</div>
 					</div>

@@ -45,6 +45,7 @@ class Bootstrap
         require $this->_role . 'controllers/index.php';
         $this->_controller = new Index();
         $this->_controller->index();
+        $this->_controller->loadModel('index');
     }
 
     private function loadExistingController()
