@@ -19,18 +19,22 @@
              </tr>
          </thead>
          <tbody>
-         <?php foreach ($this->productList as $key => $value) {?>
-            <tr>
-                 <th style="font-size: 20px; vertical-align: middle; text-align: center" scope="row"><?=$value['product_id']?></th>
-                 <td><img style="max-height:200px; max-width:200px; overflow: hidden; vertical-align: middle; text-align: center" src="../../public/<?=$value['product_pic']?>" /></td>
-                 <td style="font-size: 20px; vertical-align: middle; text-align: center"><?=$value['product_name']?></td>
-                 <td style="font-size: 20px; vertical-align: middle; text-align: center"><?=$value['product_amount']?></td>
-                 <td style="vertical-align: middle; text-align: center">
-                     <a class="btn btn-primary" href="#">Chỉnh sửa</a>
-                     <button><img src="<?=PUBLIC_RESOURCES?>/images/icons/trash-icon.png" width="40px" height="40px" /></button>
-                 </td>
-             </tr>
-         <?php }?>
+             <?php if ($this->productList == null) { ?>
+                 <div>Hiện chưa có sản phẩm nào được thêm vào</div>
+                 <?php } else {
+                        foreach ($this->productList as $key => $value) { ?>
+                     <tr>
+                         <th style="font-size: 20px; vertical-align: middle; text-align: center" scope="row"><?= $value["product_id"] ?></th>
+                         <td><img style="max-height:200px; max-width:200px; overflow: hidden; vertical-align: middle; text-align: center" src="../../public/<?= $value["product_pic"] ?>" /></td>
+                         <td style="font-size: 20px; vertical-align: middle; text-align: center"><?= $value["product_name"] ?></td>
+                         <td style="font-size: 20px; vertical-align: middle; text-align: center"><?= $value["product_amount"] ?></td>
+                         <td style="vertical-align: middle; text-align: center">
+                             <a class="btn btn-primary" href="#">Chỉnh sửa</a>
+                             <button><img src="<?= PUBLIC_RESOURCES ?>/images/icons/trash-icon.png" width="40px" height="40px" /></button>
+                         </td>
+                     </tr>
+             <?php }
+                } ?>
 
          </tbody>
      </table>

@@ -1,5 +1,5 @@
 <div class="container" id="add-product-form">
-    <form action="insertProduct" method="post">
+    <form action="insertProduct" enctype="multipart/form-data" method="post">
         <div class="form-group">
             <label for="product_name">Tên sản phẩm</label>
             <input type="text" class="form-control" id="product_name" placeholder="Tên sản phẩm" name="product_name">
@@ -61,7 +61,7 @@
             <input type="file" class="form-control-file" id="product_image_link" name="product_image_link">
         </div>
         <div style="text-align: center;">
-            <button type="submit" class="btn btn-primary">Thêm sản phẩm</button>
+            <button type="submit" name="submit" class="btn btn-primary">Thêm sản phẩm</button>
         </div>
 
     </form>
