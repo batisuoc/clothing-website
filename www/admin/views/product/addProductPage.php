@@ -62,6 +62,5 @@
         <div style="text-align: center;">
             <button type="submit" name="submit" class="btn btn-primary">Thêm sản phẩm</button>
         </div>
-
     </form>
 </div>

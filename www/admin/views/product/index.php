@@ -29,7 +29,7 @@
                          <td style="font-size: 20px; vertical-align: middle; text-align: center"><?= $value["product_name"] ?></td>
                          <td style="font-size: 20px; vertical-align: middle; text-align: center"><?= $value["product_amount"] ?></td>
                          <td style="vertical-align: middle; text-align: center">
-                             <a class="btn btn-primary" href="#">Chỉnh sửa</a>
+                             <a class="btn btn-primary" href="product/editProductPage/<?= $value["product_id"] ?>">Chỉnh sửa</a>
                              <button><img src="<?= PUBLIC_RESOURCES ?>/images/icons/trash-icon.png" width="40px" height="40px" /></button>
                          </td>
                      </tr>

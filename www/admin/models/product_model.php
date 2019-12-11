@@ -37,4 +37,24 @@ class Product_Model extends Model
     {
         return $this->db->select("SELECT product_id, product_pic, product_name FROM product");
     }
+
+    public function getProductByID($product_id)
+    {
+        return $this->db->select("SELECT product_name, product_type, product_description, product_calc_unit, product_prize FROM product WHERE product_id = " . $product_id);
+    }
+
+    public function getProductSize($product_id)
+    {
+        return $this->db->select("SELECT size_id, amount FROM product_size WHERE product_id = " . $product_id);
+    }
+
+    public function updateProductInfo($product_infos, $product_id)
+    {
+        $this->db->update("product", "product_id = " . $product_id, $product_infos);
+    }
+
+    public function updateProductSize($size_id, $product_id, $product_sizes_amount)
+    {
+        $this->db->update("product_size", "product_id = " . $product_id . " AND size_id = " . $size_id, $product_sizes_amount);
+    }
 }

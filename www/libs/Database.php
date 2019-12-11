@@ -1,14 +1,15 @@
 <?php
+
 /**
  * 
  */
-class Database extends PDO {
-	
-	function __construct($DB_TYPE, $DB_HOST, $DB_NAME, $DB_USER, $DB_PASS) {
+class Database extends PDO
+{
+	function __construct($DB_TYPE, $DB_HOST, $DB_NAME, $DB_USER, $DB_PASS)
+	{
 		try {
-			parent::__construct($DB_TYPE.':host='.$DB_HOST.';dbname='.$DB_NAME, $DB_USER, $DB_PASS);
-		} 
-		catch(PDOException $e) {
+			parent::__construct($DB_TYPE . ':host=' . $DB_HOST . ';dbname=' . $DB_NAME, $DB_USER, $DB_PASS);
+		} catch (PDOException $e) {
 			die("ERROR: Could not connect. " . $e->getMessage());
 		}
 	}
@@ -27,15 +28,20 @@ class Database extends PDO {
 			$stmt->bindValue($key, $value);
 		}
 
-		$stmt->execute();
-		$count = $stmt->rowCount();
-		if ($count == 1) {
-			return $stmt->fetch($fetchMode);
-		} elseif($count > 1) {
-			return $stmt->fetchAll($fetchMode);
-		} else {
-			return false;
-		}	
+		try {
+			$stmt->execute();
+			$count = $stmt->rowCount();
+			if ($count == 1) {
+				return $stmt->fetch($fetchMode);
+			} elseif ($count > 1) {
+				return $stmt->fetchAll($fetchMode);
+			} else {
+				return false;
+			}
+		} catch (PDOException $exception) {
+			echo $exception->getMessage();
+			die();
+		}
 	}
 
 	/**
@@ -53,8 +59,13 @@ class Database extends PDO {
 		foreach ($data as $key => $value) {
 			$stmt->bindValue($key, $value);
 		}
-		
-		$stmt->execute();
+
+		try {
+			$stmt->execute();
+		} catch (PDOException $exception) {
+			echo $exception->getMessage();
+			die();
+		}
 	}
 
 	/**
@@ -72,12 +83,17 @@ class Database extends PDO {
 		$fieldDetails = rtrim($fieldDetails, ", ");
 
 		$stmt = $this->prepare("UPDATE $table SET $fieldDetails WHERE $where");
-		
+
 		foreach ($data as $key => $value) {
 			$stmt->bindValue($key, $value);
 		}
-		
-		$stmt->execute();
+
+		try {
+			$stmt->execute();
+		} catch (PDOException $exception) {
+			echo $exception->getMessage();
+			die();
+		}
 	}
 
 	/**
@@ -88,6 +104,11 @@ class Database extends PDO {
 	 */
 	public function delete($table, $where, $limit = 1)
 	{
-		return $this->exec("DELETE FROM $table WHERE $where LIMIT $limit");
+		try {
+			return $this->exec("DELETE FROM $table WHERE $where LIMIT $limit");
+		} catch (PDOException $exception) {
+			echo $exception->getMessage();
+			die();
+		}
 	}
 }

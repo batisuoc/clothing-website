@@ -8,9 +8,8 @@ class Product extends Controller
 
     public function index()
     {
+        // Get all product first then render
         $this->view->productList = $this->model->getAllProducts();
-        // echo $this->view->productList;
-        // die();
         $this->view->render('product/index');
     }
 
@@ -19,8 +18,32 @@ class Product extends Controller
         $this->view->render('product/addProductPage');
     }
 
-    public function editProduct($id)
-    { }
+    public function editProductPage($id)
+    {
+        $this->view->singleProductInfos = $this->model->getProductByID($id);
+        $this->view->singleProductSizes = $this->model->getProductSize($id);
+        $this->view->productID = $id;
+        $this->view->render('product/editProductPage');
+    }
+
+    public function updateProductInfo($id)
+    {
+        $product_array_values = array(
+            'product_name' => $_POST['product_name'],
+            'product_calc_unit' => $_POST['calc_unit'],
+            'product_type' => $_POST['product_type'],
+            'product_prize' => $_POST['product_prize'],
+            'product_description' => $_POST['product_descript']
+        );
+        $this->model->updateProductInfo($product_array_values, $id);
+
+        $product_sizes = $_POST["size-amount"];
+        foreach ($product_sizes as $key => $value) {
+            $this->model->updateProductSize($key, $id, array('amount' => $value));
+        }
+
+        header('Location: ../../product');
+    }
 
     public function uploadImage()
     {
@@ -98,9 +121,6 @@ class Product extends Controller
                 $this->model->insertProductSize($result['product_id'], $product_size_values);
                 header('Location: ../product');
             }
-            // echo '<script>';
-            // echo 'alert("Thêm sản phẩm thành công !!!");';
-            // echo '</script>';
         }
     }
 }
