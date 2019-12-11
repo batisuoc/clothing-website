@@ -9,8 +9,8 @@ class Product extends Controller
     public function index()
     {
         $this->view->productList = $this->model->getAllProducts();
-        echo $this->view->productList;
-        die();
+        // echo $this->view->productList;
+        // die();
         $this->view->render('product/index');
     }
 
@@ -84,7 +84,6 @@ class Product extends Controller
             'product_calc_unit' => $_POST['calc_unit'],
             'product_type' => $_POST['product_type'],
             'product_prize' => $_POST['product_prize'],
-            'product_amount' => $_POST['product_amount'],
             'product_description' => $_POST['product_descript'],
             'product_pic' => $this->uploadImage()
         );
@@ -92,10 +91,11 @@ class Product extends Controller
 
         $result = $this->model->getProductID($_POST['product_name']);
 
+
         if ($result != false) {
-            $product_sizes = $_POST['product_size'];
-            if (count($product_sizes) > 0) {
-                $this->model->insertProductSize($result['product_id'], $product_sizes);
+            $product_size_values = $_POST["size-amount"];
+            if (count($product_size_values) > 0) {
+                $this->model->insertProductSize($result['product_id'], $product_size_values);
                 header('Location: ../product');
             }
             // echo '<script>';

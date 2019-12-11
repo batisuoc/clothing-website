@@ -17,21 +17,24 @@ class Product_Model extends Model
         return $this->db->select($sql, array('product_name' => $product_name));
     }
 
-    public function insertProductSize($product_id, $listProductSizes)
+    public function insertProductSize($product_id, $listProductSizesAmount)
     {
-        foreach ($listProductSizes as $value) {
+        $size_id = 1;
+        foreach ($listProductSizesAmount as $value) {
             $this->db->insert(
                 "product_size",
                 array(
                     'product_id' => $product_id,
-                    'size_id' => $value,
+                    'size_id' => $size_id,
+                    'amount' => $value
                 )
             );
+            $size_id++;
         }
     }
 
     public function getAllProducts()
     {
-        return $this->db->select("SELECT * FROM product");
+        return $this->db->select("SELECT product_id, product_pic, product_name FROM product");
     }
 }

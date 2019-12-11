@@ -7,6 +7,7 @@
         <div class="form-group">
             <label for="product_type">Loại sản phẩm</label>
             <select class="form-control" id="product_type" name="product_type">
+                <option value="0">Hãy chọn loại quần áo</option>
                 <option value="1">Áo</option>
                 <option value="2">Quần</option>
                 <option value="3">Váy / Đầm</option>
@@ -18,39 +19,37 @@
         </div>
         <div class="form-group">
             <label>Size ( Kích cỡ ) : </label>
-            <!-- Default inline 1-->
-            <div class="custom-control custom-checkbox custom-control-inline">
-                <input type="checkbox" class="custom-control-input" name="product_size[]" id="size-s" value="1">
-                <label class="custom-control-label" for="size-s">S</label>
-            </div>
-            <!-- Default inline 2-->
-            <div class="custom-control custom-checkbox custom-control-inline">
-                <input type="checkbox" class="custom-control-input" name="product_size[]" id="size-m" value="2">
-                <label class="custom-control-label" for="size-m">M</label>
-            </div>
-            <!-- Default inline 3-->
-            <div class="custom-control custom-checkbox custom-control-inline">
-                <input type="checkbox" class="custom-control-input" name="product_size[]" id="size-l" value="3">
-                <label class="custom-control-label" for="size-l">L</label>
-            </div>
-            <!-- Default inline 3-->
-            <div class="custom-control custom-checkbox custom-control-inline">
-                <input type="checkbox" class="custom-control-input" name="product_size[]" id="size-xl" value="4">
-                <label class="custom-control-label" for="size-xl">XL</label>
-            </div>
-            <!-- Default inline 3-->
-            <div class="custom-control custom-checkbox custom-control-inline">
-                <input type="checkbox" class="custom-control-input" name="product_size[]" id="size-xxl" value="5">
-                <label class="custom-control-label" for="size-xxl">XXL</label>
+            <div class="form-inline">
+                <!-- Default inline 1-->
+                <div class="form-group form-inline">
+                    <label for="s-amount" style="margin-right: 5px; margin-left: 30px;">S: </label>
+                    <input type="number" class="form-control" id="s-amount" name="size-amount[1]" style="width: 100px;" value="0">
+                </div>
+                <!-- Default inline 2-->
+                <div class="form-group form-inline">
+                    <label for="m-amount" style="margin-right: 5px; margin-left: 30px;">M: </label>
+                    <input type="number" class="form-control" id="m-amount" name="size-amount[2]" style="width: 100px;" value="0">
+                </div>
+                <!-- Default inline 3-->
+                <div class="form-group form-inline">
+                    <label for="l-amount" style="margin-right: 5px; margin-left: 30px;">L: </label>
+                    <input type="number" class="form-control" id="l-amount" name="size-amount[3]" style="width: 100px;" value="0">
+                </div>
+                <!-- Default inline 3-->
+                <div class="form-group form-inline">
+                    <label for="xl-amount" style="margin-right: 5px; margin-left: 30px;">XL: </label>
+                    <input type="number" class="form-control" id="xl-amount" name="size-amount[4]" style="width: 100px;" value="0">
+                </div>
+                <!-- Default inline 3-->
+                <div class="form-group form-inline">
+                    <label for="xxl-amount" style="margin-right: 5px; margin-left: 30px;">XXL: </label>
+                    <input type="number" class="form-control" id="xxl-amount" name="size-amount[5]" style="width: 100px;" value="0">
+                </div>
             </div>
         </div>
         <div class="form-group">
             <label for="product_prize">Giá / Một đơn vị tính</label>
             <input type="number" class="form-control" id="product_prize" placeholder="Giá / Một đơn vị tính" name="product_prize">
-        </div>
-        <div class="form-group">
-            <label for="product_amount">Số lượng</label>
-            <input type="number" class="form-control" id="product_amount" placeholder="Số lượng" name="product_amount">
         </div>
         <div class="form-group">
             <label for="product_descript">Mô tả</label>

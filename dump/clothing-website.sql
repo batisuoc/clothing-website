@@ -98,6 +98,7 @@ CREATE TABLE product_size
 (
   product_id INT NOT NULL,
   size_id INT NOT NULL,
+  amount INT,
   CONSTRAINT fk_ps_prod FOREIGN KEY (product_id) REFERENCES product(product_id),
   CONSTRAINT fk_ps_size FOREIGN KEY (size_id) REFERENCES size(size_id)
 );
