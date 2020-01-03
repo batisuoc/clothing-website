@@ -240,6 +240,10 @@
 <script src="<?= CLIENT_RESOURCES ?>js/plugins.js"></script>
 <!-- Main js file that contents all jQuery plugins activation. -->
 <script src="<?= CLIENT_RESOURCES ?>js/main.js"></script>
+<!-- My custom javascript -->
+<script src="<?= PUBLIC_RESOURCES ?>js/custom.js"></script>
+<!-- Modernizr JS -->
+<script src="<?= CLIENT_RESOURCES ?>js/vendor/modernizr-2.8.3.min.js"></script>
 
 </body>
 

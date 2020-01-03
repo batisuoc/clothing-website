@@ -1,5 +1,5 @@
  <!--breadcumb area start -->
- <div class="breadcumb-area breadcumb-2 overlay pos-rltv">
+ <div class="breadcumb-area overlay pos-rltv">
      <div class="bread-main">
          <div class="bred-hading text-center">
              <h5>Product Grid View</h5>
@@ -38,72 +38,9 @@
                              </div>
                              <div id="cat-treeview" class="product-cat">
                                  <ul>
-                                     <li class="closed"><a href="#">Men (05)</a>
-                                         <ul>
-                                             <li><a href="#">T-Shirt</a></li>
-                                             <li><a href="#">Shirt</a></li>
-                                             <li><a href="#">Pant</a></li>
-                                             <li><a href="#">Shoe</a></li>
-                                             <li><a href="#">Gifts</a></li>
-                                         </ul>
-                                     </li>
-                                     <li class="closed"><a href="#">Women (10)</a>
-                                         <ul>
-                                             <li><a href="#">T-Shirt</a>
-                                                 <ul>
-                                                     <li><a href="#">T-Shirt 01</a></li>
-                                                     <li><a href="#">T-Shirt 02</a></li>
-                                                 </ul>
-                                             </li>
-                                             <li><a href="#">Shirt</a>
-                                                 <ul>
-                                                     <li><a href="#">Shirt 01</a></li>
-                                                     <li><a href="#">Shirt 02</a></li>
-                                                 </ul>
-                                             </li>
-                                             <li><a href="#">Pant</a>
-                                                 <ul>
-                                                     <li><a href="#">Pant 01</a></li>
-                                                     <li><a href="#">Pant 02</a></li>
-                                                 </ul>
-                                             </li>
-                                             <li><a href="#">Shoe</a>
-                                                 <ul>
-                                                     <li><a href="#">Shoe 01</a></li>
-                                                     <li><a href="#">Shoe 02</a></li>
-                                                 </ul>
-                                             </li>
-                                             <li><a href="#">Gifts</a>
-                                                 <ul>
-                                                     <li><a href="#">Gift 01</a></li>
-                                                     <li><a href="#">Gift 02</a></li>
-                                                 </ul>
-                                             </li>
-                                         </ul>
-                                     </li>
-                                     <li class="closed"><a href="#">Accessories (07)</a>
-                                         <ul>
-                                             <li><a href="#">Accessories 01</a></li>
-                                             <li><a href="#">Accessories 02</a></li>
-                                             <li><a href="#">Accessories 03</a></li>
-                                         </ul>
-                                     </li>
-                                     <li class="closed"><a href="#">Beauty (06)</a>
-                                         <ul>
-                                             <li><a href="#">Beauty 01</a></li>
-                                             <li><a href="#">Beauty 02</a></li>
-                                             <li><a href="#">Beauty 03</a></li>
-                                         </ul>
-                                     </li>
-                                     <li class="closed"><a href="#">Watch (09)</a>
-                                         <ul>
-                                             <li><a href="#">Watch 01</a></li>
-                                             <li><a href="#">Watch 02</a></li>
-                                             <li><a href="#">Watch 03</a></li>
-                                         </ul>
-                                     </li>
-                                     <li class="closed"><a href="#">Sports</a></li>
-                                     <li class="closed"><a href="#">Others</a></li>
+                                     <li class="closed"><a href="#">Áo</a></li>
+                                     <li class="closed"><a href="#">Quần</a></li>
+                                     <li class="closed"><a href="#">Váy / Đầm</a></li>
                                  </ul>
                              </div>
                          </aside>
@@ -125,25 +62,6 @@
                          <!--single aside end-->
 
                          <!--single aside start-->
-                         <aside class="single-aside color-aside">
-                             <div class="heading-title aside-title pos-rltv">
-                                 <h5 class="uppercase">Color</h5>
-                             </div>
-                             <ul class="color-filter mt-30">
-                                 <li><a href="#" class="color-1"></a></li>
-                                 <li><a href="#" class="color-2 active"></a></li>
-                                 <li><a href="#" class="color-3"></a></li>
-                                 <li><a href="#" class="color-4"></a></li>
-                                 <li><a href="#" class="color-5"></a></li>
-                                 <li><a href="#" class="color-6"></a></li>
-                                 <li><a href="#" class="color-7"></a></li>
-                                 <li><a href="#" class="color-8"></a></li>
-                                 <li><a href="#" class="color-9"></a></li>
-                             </ul>
-                         </aside>
-                         <!--single aside end-->
-
-                         <!--single aside start-->
                          <aside class="single-aside size-aside">
                              <div class="heading-title aside-title pos-rltv">
                                  <h5 class="uppercase">Size Option</h5>
@@ -157,194 +75,6 @@
                              </ul>
                          </aside>
 
-                         <!--single aside start-->
-                         <aside class="single-aside tag-aside">
-                             <div class="heading-title aside-title pos-rltv">
-                                 <h5 class="uppercase">Product Tags</h5>
-                             </div>
-                             <ul class="tag-filter mt-30">
-                                 <li><a href="#">Fashion</a></li>
-                                 <li><a href="#">Women</a></li>
-                                 <li><a href="#">Winter</a></li>
-                                 <li><a href="#">Street Style</a></li>
-                                 <li><a href="#">Style</a></li>
-                                 <li><a href="#">Shop</a></li>
-                                 <li><a href="#">Collection</a></li>
-                                 <li><a href="#">Spring 2016</a></li>
-                             </ul>
-                         </aside>
-                         <!--single aside end-->
-
-                         <!--single aside start-->
-                         <aside class="single-aside product-aside">
-                             <div class="heading-title aside-title pos-rltv">
-                                 <h5 class="uppercase">Recent Product</h5>
-                             </div>
-                             <div class="recent-prodcut-wraper total-rectnt-slider">
-                                 <div class="single-rectnt-slider">
-                                     <!-- single product start-->
-                                     <div class="single-product recent-single-product">
-                                         <div class="product-img">
-                                             <div class="single-prodcut-img  product-overlay pos-rltv">
-                                                 <a href="single-product.html"> <img alt="" src="<?= CLIENT_RESOURCES ?>images/product/rp01.jpg" class="primary-image"> <img alt="" src="<?= CLIENT_RESOURCES ?>images/product/rp02.jpg" class="secondary-image"> </a>
-                                             </div>
-                                         </div>
-                                         <div class="product-text">
-                                             <div class="prodcut-name"> <a href="single-product.html">Copenhagen Spitfire Chair</a> </div>
-                                             <div class="prodcut-ratting-price">
-                                                 <div class="prodcut-ratting"> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star-o"></i></a> </div>
-                                                 <div class="prodcut-price">
-                                                     <div class="new-price"> $220 </div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                     <!-- single product end-->
-
-                                     <!-- single product start-->
-                                     <div class="single-product recent-single-product">
-                                         <div class="product-img">
-                                             <div class="single-prodcut-img  product-overlay pos-rltv">
-                                                 <a href="single-product.html"> <img alt="" src="<?= CLIENT_RESOURCES ?>images/product/rp03.jpg" class="primary-image"> <img alt="" src="<?= CLIENT_RESOURCES ?>images/product/rp04.jpg" class="secondary-image"> </a>
-                                             </div>
-                                         </div>
-                                         <div class="product-text">
-                                             <div class="prodcut-name"> <a href="single-product.html">Copenhagen Spitfire Chair</a> </div>
-                                             <div class="prodcut-ratting-price">
-                                                 <div class="prodcut-ratting"> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star-o"></i></a> </div>
-                                                 <div class="prodcut-price">
-                                                     <div class="new-price"> $220 </div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                     <!-- single product end-->
-
-                                     <!-- single product start-->
-                                     <div class="single-product recent-single-product">
-                                         <div class="product-img">
-                                             <div class="single-prodcut-img  product-overlay pos-rltv">
-                                                 <a href="single-product.html"> <img alt="" src="<?= CLIENT_RESOURCES ?>images/product/rp02.jpg" class="primary-image"> <img alt="" src="<?= CLIENT_RESOURCES ?>images/product/rp03.jpg" class="secondary-image"> </a>
-                                             </div>
-                                         </div>
-                                         <div class="product-text">
-                                             <div class="prodcut-name"> <a href="single-product.html">Copenhagen Spitfire Chair</a> </div>
-                                             <div class="prodcut-ratting-price">
-                                                 <div class="prodcut-ratting"> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star-o"></i></a> </div>
-                                                 <div class="prodcut-price">
-                                                     <div class="new-price"> $220 </div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                     <!-- single product end-->
-
-                                     <!-- single product start-->
-                                     <div class="single-product recent-single-product">
-                                         <div class="product-img">
-                                             <div class="single-prodcut-img  product-overlay pos-rltv">
-                                                 <a href="single-product.html"> <img alt="" src="<?= CLIENT_RESOURCES ?>images/product/rp04.jpg" class="primary-image"> <img alt="" src="<?= CLIENT_RESOURCES ?>images/product/rp01.jpg" class="secondary-image"> </a>
-                                             </div>
-                                         </div>
-                                         <div class="product-text">
-                                             <div class="prodcut-name"> <a href="single-product.html">Copenhagen Spitfire Chair</a> </div>
-                                             <div class="prodcut-ratting-price">
-                                                 <div class="prodcut-ratting"> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star-o"></i></a> </div>
-                                                 <div class="prodcut-price">
-                                                     <div class="new-price"> $220 </div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                     <!-- single product end-->
-                                 </div>
-                                 <div class="single-rectnt-slider">
-                                     <!-- single product start-->
-                                     <div class="single-product recent-single-product">
-                                         <div class="product-img">
-                                             <div class="single-prodcut-img  product-overlay pos-rltv">
-                                                 <a href="single-product.html"> <img alt="" src="<?= CLIENT_RESOURCES ?>images/product/rp01.jpg" class="primary-image"> <img alt="" src="<?= CLIENT_RESOURCES ?>images/product/rp02.jpg" class="secondary-image"> </a>
-                                             </div>
-                                         </div>
-                                         <div class="product-text">
-                                             <div class="prodcut-name"> <a href="single-product.html">Copenhagen Spitfire Chair</a> </div>
-                                             <div class="prodcut-ratting-price">
-                                                 <div class="prodcut-ratting"> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star-o"></i></a> </div>
-                                                 <div class="prodcut-price">
-                                                     <div class="new-price"> $220 </div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                     <!-- single product end-->
-
-                                     <!-- single product start-->
-                                     <div class="single-product recent-single-product">
-                                         <div class="product-img">
-                                             <div class="single-prodcut-img  product-overlay pos-rltv">
-                                                 <a href="single-product.html"> <img alt="" src="<?= CLIENT_RESOURCES ?>images/product/rp03.jpg" class="primary-image"> <img alt="" src="<?= CLIENT_RESOURCES ?>images/product/rp04.jpg" class="secondary-image"> </a>
-                                             </div>
-                                         </div>
-                                         <div class="product-text">
-                                             <div class="prodcut-name"> <a href="single-product.html">Copenhagen Spitfire Chair</a> </div>
-                                             <div class="prodcut-ratting-price">
-                                                 <div class="prodcut-ratting"> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star-o"></i></a> </div>
-                                                 <div class="prodcut-price">
-                                                     <div class="new-price"> $220 </div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                     <!-- single product end-->
-
-                                     <!-- single product start-->
-                                     <div class="single-product recent-single-product">
-                                         <div class="product-img">
-                                             <div class="single-prodcut-img  product-overlay pos-rltv">
-                                                 <a href="single-product.html"> <img alt="" src="<?= CLIENT_RESOURCES ?>images/product/rp02.jpg" class="primary-image"> <img alt="" src="<?= CLIENT_RESOURCES ?>images/product/rp03.jpg" class="secondary-image"> </a>
-                                             </div>
-                                         </div>
-                                         <div class="product-text">
-                                             <div class="prodcut-name"> <a href="single-product.html">Copenhagen Spitfire Chair</a> </div>
-                                             <div class="prodcut-ratting-price">
-                                                 <div class="prodcut-ratting"> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star-o"></i></a> </div>
-                                                 <div class="prodcut-price">
-                                                     <div class="new-price"> $220 </div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                     <!-- single product end-->
-
-                                     <!-- single product start-->
-                                     <div class="single-product recent-single-product">
-                                         <div class="product-img">
-                                             <div class="single-prodcut-img  product-overlay pos-rltv">
-                                                 <a href="single-product.html"> <img alt="" src="<?= CLIENT_RESOURCES ?>images/product/rp04.jpg" class="primary-image"> <img alt="" src="<?= CLIENT_RESOURCES ?>images/product/rp01.jpg" class="secondary-image"> </a>
-                                             </div>
-                                         </div>
-                                         <div class="product-text">
-                                             <div class="prodcut-name"> <a href="single-product.html">Copenhagen Spitfire Chair</a> </div>
-                                             <div class="prodcut-ratting-price">
-                                                 <div class="prodcut-ratting"> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star"></i></a> <a href="#"><i class="fa fa-star-o"></i></a> </div>
-                                                 <div class="prodcut-price">
-                                                     <div class="new-price"> $220 </div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                     </div>
-                                     <!-- single product end-->
-                                 </div>
-                             </div>
-
-                         </aside>
-                         <!--single aside end-->
-
-                         <!--single aside start-->
-                         <aside class="single-aside add-aside">
-                             <a href="single-product.html"><img src="<?= CLIENT_RESOURCES ?>images/banner/add.jpg" alt=""></a>
-                         </aside>
-                         <!--single aside end-->
                      </div>
                  </div>
              </div>
@@ -366,7 +96,7 @@
                                              <option value="audi" selected>25</option>
                                          </select>
                                      </div>
-                                     <div class="sort product-type">
+                                     <!-- <div class="sort product-type">
                                          <label>Sort By</label>
                                          <select id="input-sort">
                                              <option value="#" selected>Default</option>
@@ -379,7 +109,7 @@
                                              <option value="#">Model (A - Z)</option>
                                              <option value="#">Model (Z - A)</option>
                                          </select>
-                                     </div>
+                                     </div> -->
                                  </div>
                                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                      <div class="list-grid-view text-center">
@@ -389,11 +119,11 @@
                                          </ul>
                                      </div>
                                  </div>
-                                 <div class="col-lg-3 hidden-md hidden-sm hidden-xs">
+                                 <!-- <div class="col-lg-3 hidden-md hidden-sm hidden-xs">
                                      <div class="total-showing text-right">
                                          Showing - <span>10</span> to <span>18</span> Of Total <span>36</span>
                                      </div>
-                                 </div>
+                                 </div> -->
                              </div>
                          </div>
                      </div>
@@ -413,26 +143,26 @@
                                                  <!-- single product start-->
                                                  <div class="single-product">
                                                      <div class="product-img">
-                                                         <div class="product-label red">
+                                                         <!-- <div class="product-label red">
                                                              <div class="new">New</div>
-                                                         </div>
+                                                         </div> -->
                                                          <div class="single-prodcut-img  product-overlay pos-rltv">
-                                                             <a href="single-product.html">
+                                                             <a href="shop/singleProductPage/<?= $value['product_id'] ?>">
                                                                  <img alt="" src="<?= PUBLIC_RESOURCES . $value['product_pic'] ?>" class="primary-image" style="width: 272px; height: 390px;">
                                                                  <!-- <img alt="" src="images/product/02.jpg" class="secondary-image"> -->
                                                              </a>
                                                          </div>
                                                          <div class="product-icon socile-icon-tooltip text-center">
                                                              <ul>
-                                                                 <li><a href="#" data-tooltip="Add To Cart" class="add-cart" data-placement="left"><i class="fa fa-cart-plus"></i></a></li>
-                                                                 <li><a href="#" data-tooltip="Wishlist" class="w-list"><i class="fa fa-heart-o"></i></a></li>
+                                                                 <li><a href="#" data-tooltip="Add To Cart" class="add-cart" data-placement="left" id="<?= $value['product_id'] ?>"><i class="fa fa-cart-plus"></i></a></li>
+                                                                 <!-- <li><a href="#" data-tooltip="Wishlist" class="w-list"><i class="fa fa-heart-o"></i></a></li>
                                                                  <li><a href="#" data-tooltip="Compare" class="cpare"><i class="fa fa-refresh"></i></a></li>
-                                                                 <li><a href="#" data-tooltip="Quick View" class="q-view" data-toggle="modal" data-target=".modal"><i class="fa fa-eye"></i></a></li>
+                                                                 <li><a href="#" data-tooltip="Quick View" class="q-view" data-toggle="modal" data-target=".modal"><i class="fa fa-eye"></i></a></li> -->
                                                              </ul>
                                                          </div>
                                                      </div>
                                                      <div class="product-text">
-                                                         <div class="prodcut-name"> <a href="#"><?= $value['product_name'] ?></a> </div>
+                                                         <div class="prodcut-name"><a href="shop/singleProductPage/<?= $value['product_id'] ?>"><?= $value['product_name'] ?></a> </div>
                                                          <div class="prodcut-ratting-price">
                                                              <div class="prodcut-price">
                                                                  <div class="new-price"><?= number_format($value['product_prize']) ?> đ</div>

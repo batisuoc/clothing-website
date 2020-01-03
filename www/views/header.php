@@ -1,10 +1,16 @@
+<?php
+
+
+
+?>
+
 <!doctype html>
 <html class="no-js" lang="en">
 
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Home</title>
+	<title>MK Store</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -25,10 +31,6 @@
 	<!-- User style -->
 	<link rel="stylesheet" href="<?= CLIENT_RESOURCES ?>css/custom.css">
 	<link rel="stylesheet" href="<?= CLIENT_RESOURCES ?>css/color/skin-default.css">
-
-
-	<!-- Modernizr JS -->
-	<script src="<?= CLIENT_RESOURCES ?>js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
@@ -73,6 +75,8 @@
 											</select>
 										</div>
 									</li> -->
+
+									<!-- <li><?= $_COOKIE['productId'] ?></li> -->
 									<li>
 										<div class="header-cart">
 											<div class="cart-icon">
@@ -80,39 +84,38 @@
 													Giỏ hàng
 													<i class="zmdi zmdi-shopping-cart"></i>
 												</a>
-												<span>2</span>
+												<span id="cart-count">0</span>
 											</div>
+
 											<div class="cart-content-wraper">
-												<div class="cart-single-wraper">
-													<div class="cart-img">
-														<a href="#"><img src="<?= CLIENT_RESOURCES ?>images/product/01.jpg" alt=""></a>
+												<?php
+												$cookie_temp = $_COOKIE['productId'];
+												$cookie_arr = explode(",", $cookie_temp);
+												for ($i = 0; $i < count($cookie_arr); $i++) {
+													// $sql = SELECT product_Pic
+													?>
+													<div class="cart-single-wraper">
+														<div class="cart-img">
+															<a href="#"><img src="<?= CLIENT_RESOURCES ?>images/product/01.jpg" alt=""></a>
+														</div>
+														<div class="cart-content">
+															<div class="cart-name"> <a href="#">Aenean Eu Tristique</a> </div>
+															<div class="cart-price"> $70.00 </div>
+															<div class="cart-qty"> Qty: <span>1</span> </div>
+														</div>
+														<div class="remove"> <a href="#"><i class="zmdi zmdi-close"></i></a> </div>
 													</div>
-													<div class="cart-content">
-														<div class="cart-name"> <a href="#">Aenean Eu Tristique</a> </div>
-														<div class="cart-price"> $70.00 </div>
-														<div class="cart-qty"> Qty: <span>1</span> </div>
-													</div>
-													<div class="remove"> <a href="#"><i class="zmdi zmdi-close"></i></a> </div>
-												</div>
-												<div class="cart-single-wraper">
-													<div class="cart-img">
-														<a href="#"><img src="<?= CLIENT_RESOURCES ?>images/product/02.jpg" alt=""></a>
-													</div>
-													<div class="cart-content">
-														<div class="cart-name"> <a href="#">Aenean Eu Tristique</a> </div>
-														<div class="cart-price"> $70.00 </div>
-														<div class="cart-qty"> Qty: <span>1</span> </div>
-													</div>
-													<div class="remove"> <a href="#"><i class="zmdi zmdi-close"></i></a> </div>
-												</div>
+												<?php } ?>
 												<div class="cart-subtotal"> Subtotal: <span>$200.00</span> </div>
 												<div class="cart-check-btn">
 													<div class="view-cart"> <a class="btn-def" href="cart.html">View Cart</a> </div>
 													<div class="check-btn"> <a class="btn-def" href="checkout.html">Checkout</a> </div>
 												</div>
 											</div>
+
 										</div>
 									</li>
+
 								</ul>
 							</div>
 						</div>

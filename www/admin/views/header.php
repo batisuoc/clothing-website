@@ -73,16 +73,16 @@
 					<a class="dropdown-item" href="#">Something else here</a>
 				</div>
 			</li> -->
-			<li class="nav-item dropdown no-arrow">
-				<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<li class="nav-item dropdown no-arrow">
 					<i class="fas fa-user-circle fa-fw"></i>
-				</a>
-				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-					<!-- <a class="dropdown-item" href="#">Settings</a>
+			</a>
+			<div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+				<!-- <a class="dropdown-item" href="#">Settings</a>
 					<a class="dropdown-item" href="#">Activity Log</a> -->
-					<!-- <div class="dropdown-divider"></div> -->
-					<a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Đăng xuất</a>
-				</div>
+				<!-- <div class="dropdown-divider"></div> -->
+				<a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Đăng xuất</a>
+			</div>
 			</li>
 		</ul>
 
@@ -108,10 +108,10 @@
 					<a class="dropdown-item" href="<?= URL ?>index">Trang chủ</a>
 					<!-- <a class="dropdown-item" href="register.html">Register</a>
 					<a class="dropdown-item" href="forgot-password.html">Forgot Password</a> -->
-					<div class="dropdown-divider"></div>
+					<!-- <div class="dropdown-divider"></div>
 					<h6 class="dropdown-header">Other Pages:</h6>
 					<a class="dropdown-item" href="404.html">404 Page</a>
-					<a class="dropdown-item" href="blank.html">Blank Page</a>
+					<a class="dropdown-item" href="blank.html">Blank Page</a> -->
 				</div>
 			</li>
 			<li class="nav-item">
@@ -119,11 +119,6 @@
 					<i class="fas fa-fw fa-chart-area"></i>
 					<span>Quản lý sản phầm</span>
 				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="tables.html">
-					<i class="fas fa-fw fa-table"></i>
-					<span>Tables</span></a>
 			</li>
 		</ul>
 

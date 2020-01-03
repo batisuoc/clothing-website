@@ -14,10 +14,18 @@ class Shop extends Controller
     {
         // Get all products from database first, then render the html
         $this->view->products = $this->model->getAllProducts();
-
         $this->view->render('shop/index');
     }
 
-    public function editProduct($product_id)
-    { }
+    public function singleProductPage($product_id)
+    {
+        $this->view->productInfos = $this->model->getSingleProductInfo($product_id);
+
+        $this->view->render('shop/singleProductPage');
+    }
+
+    public function getSingleProductInfo($product_id)
+    {
+        return $this->model->getCartProductInfo($product_id);
+    }
 }

@@ -5,7 +5,7 @@
  */
 class Database extends PDO
 {
-	function __construct($DB_TYPE, $DB_HOST, $DB_NAME, $DB_USER, $DB_PASS)
+	function  __construct($DB_TYPE, $DB_HOST, $DB_NAME, $DB_USER, $DB_PASS)
 	{
 		try {
 			parent::__construct($DB_TYPE . ':host=' . $DB_HOST . ';dbname=' . $DB_NAME, $DB_USER, $DB_PASS);
@@ -102,7 +102,7 @@ class Database extends PDO
 	 * @param string $where The WHERE conditions
 	 * @param integer $limit An limit row 
 	 */
-	public function delete($table, $where, $limit = 1)
+	public function delete($table, $where, $limit = 0)
 	{
 		try {
 			return $this->exec("DELETE FROM $table WHERE $where LIMIT $limit");

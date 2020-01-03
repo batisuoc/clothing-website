@@ -18,6 +18,30 @@ class Product extends Controller
         $this->view->render('product/addProductPage');
     }
 
+    public function insertProduct()
+    {
+        // Insert product basic infos
+        $product_array_values = array(
+            'product_name' => $_POST['product_name'],
+            'product_calc_unit' => $_POST['calc_unit'],
+            'product_type' => $_POST['product_type'],
+            'product_prize' => $_POST['product_prize'],
+            'product_description' => $_POST['product_descript'],
+            'product_pic' => $this->uploadImage()
+        );
+        $this->model->insertProduct($product_array_values);
+        // Get Product ID
+        $result = $this->model->getProductID($_POST['product_name']);
+        // Insert product sizes infos
+        if ($result != false) {
+            $product_size_values = $_POST["size-amount"];
+            if (count($product_size_values) > 0) {
+                $this->model->insertProductSize($result['product_id'], $product_size_values);
+                header('Location: ../product');
+            }
+        }
+    }
+
     public function editProductPage($id)
     {
         $this->view->singleProductInfos = $this->model->getProductByID($id);
@@ -44,6 +68,8 @@ class Product extends Controller
 
         header('Location: ../../product');
     }
+
+    // public function deleteProduct($id) {}
 
     public function uploadImage()
     {
@@ -96,30 +122,6 @@ class Product extends Controller
             } else {
                 echo "Sorry, there was an error uploading your file.";
                 die();
-            }
-        }
-    }
-
-    public function insertProduct()
-    {
-        $product_array_values = array(
-            'product_name' => $_POST['product_name'],
-            'product_calc_unit' => $_POST['calc_unit'],
-            'product_type' => $_POST['product_type'],
-            'product_prize' => $_POST['product_prize'],
-            'product_description' => $_POST['product_descript'],
-            'product_pic' => $this->uploadImage()
-        );
-        $this->model->insertProduct($product_array_values);
-
-        $result = $this->model->getProductID($_POST['product_name']);
-
-
-        if ($result != false) {
-            $product_size_values = $_POST["size-amount"];
-            if (count($product_size_values) > 0) {
-                $this->model->insertProductSize($result['product_id'], $product_size_values);
-                header('Location: ../product');
             }
         }
     }

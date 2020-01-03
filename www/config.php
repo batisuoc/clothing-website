@@ -12,7 +12,7 @@ define('URL', 'http://localhost:8888/');
 define('ADMIN_URL', URL . 'admin/');
 define('CLIENT_RESOURCES', URL . 'public/template/client/');
 define('ADMIN_RESOURCES', URL . 'public/template/admin/');
-define('PUBLIC_RESOURCES', '../public/');
+define('PUBLIC_RESOURCES', URL . 'public/');
 define('LIBS', 'libs/');
 define('ADMIN_LIBS', '../libs/');
 

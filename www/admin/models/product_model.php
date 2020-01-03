@@ -57,4 +57,14 @@ class Product_Model extends Model
     {
         $this->db->update("product_size", "product_id = " . $product_id . " AND size_id = " . $size_id, $product_sizes_amount);
     }
+
+    // public function deleteProductSizes($product_id)
+    // {
+    //     $this->db->delete("product_size", "product_id = " . $product_id);
+    // }
+
+    // public function deleteProduct($product_id)
+    // {
+    //     $this->db->delete();
+    // }
 }
