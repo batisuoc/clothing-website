@@ -12021,6 +12021,7 @@
 													"model": {
 														"$ref": "AAAAAAFuZByH98RqwWQ="
 													},
+													"visible": false,
 													"font": "Arial;13;0",
 													"left": 13,
 													"top": 602,
@@ -12032,14 +12033,14 @@
 											"left": 8,
 											"top": 567,
 											"width": 220.455078125,
-											"height": 53
+											"height": 38
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 8,
 									"top": 544,
 									"width": 220.455078125,
-									"height": 76,
+									"height": 61,
 									"nameLabel": {
 										"$ref": "AAAAAAFuZBxVesRULWs="
 									},
@@ -14733,8 +14734,7 @@
 										"$ref": "AAAAAAFwvqqdnTV7zu0="
 									},
 									"name": "Tag ID",
-									"type": "CHAR",
-									"length": "6",
+									"type": "INTEGER",
 									"primaryKey": true
 								},
 								{

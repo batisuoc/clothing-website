@@ -4,12 +4,6 @@ GO
 USE clothing_website;
 GO
 
-CREATE TABLE account
-(
-  username char(20) not null primary key,
-  pass char(156) not null
-);
-
 CREATE TABLE staff_role (
   role_id INT PRIMARY KEY AUTO_INCREMENT,
   role_name text not null
@@ -17,21 +11,17 @@ CREATE TABLE staff_role (
 
 CREATE TABLE staff_action (
   action_id INT PRIMARY KEY AUTO_INCREMENT,
-  action_name text not null,
-  action_code char
-(20)
+  action_name text not null
 );
 
 CREATE TABLE product_type (
   prod_type_id INT PRIMARY KEY AUTO_INCREMENT,
-  prod_name VARCHAR
-(256) not null
+  prod_name VARCHAR(256) not null
 );
 
 CREATE TABLE size (
   size_id INT PRIMARY KEY AUTO_INCREMENT,
-  size_name CHAR
-(3) not null UNIQUE
+  size_name CHAR(3) not null UNIQUE
 );
 
 CREATE TABLE staff_role_action
@@ -45,60 +35,44 @@ CREATE TABLE staff_role_action
 
 CREATE TABLE customer (
   customer_id INT PRIMARY KEY AUTO_INCREMENT,
-  username char
-(20) not null,
-  customer_name varchar
-(256) not null,
-  phone char
-(10) not null,
+  customer_username char(20) not null,
+  customer_name varchar(256) not null,
+  customer_phone char(10) not null,
   customer_address text,
-  CONSTRAINT fk_customer_acc FOREIGN KEY
-(username) REFERENCES account
-(username)
+  customer_email varchar(256)
 );
 
 CREATE TABLE staff (
   staff_id INT PRIMARY KEY AUTO_INCREMENT,
-  username char
-(20) not null,
+  staff_username char(20) not null,
+  staff_password char(100) not null,
   role_id INT not null,
-  staff_name varchar
-(256) not null,
-  day_of_birth DATE not null,
+  staff_name varchar(256) not null,
+  day_of_birth DATE,
   staff_address text,
-  phone char
-(10) not null,
-  started_date DATE not null,
-  CONSTRAINT fk_staff_acc FOREIGN KEY
-(username) REFERENCES account
-(username),
-  CONSTRAINT fk_staff_role FOREIGN KEY
-(role_id) REFERENCES staff_role
-(role_id)
+  phone char(10),
+  started_date DATE,
+  end_date DATE,
+  CONSTRAINT fk_staff_role FOREIGN KEY(role_id) REFERENCES staff_role(role_id)
 );
 
 CREATE TABLE product (
   product_id INT PRIMARY KEY AUTO_INCREMENT,
-  product_name VARCHAR
-(256) not null UNIQUE,
+  product_name VARCHAR(256) not null UNIQUE,
   product_type INT not null,
-  product_pic VARCHAR
-(256),
+  product_pic VARCHAR(256),
   product_description text,
-  product_calc_unit char
-(10),
+  product_calc_unit char(10),
   product_prize INT not null,
   product_amount INT not null,
-  CONSTRAINT fk_product_type FOREIGN KEY
-(product_type) REFERENCES product_type
-(prod_type_id)
+  CONSTRAINT fk_product_type FOREIGN KEY(product_type) REFERENCES product_type(prod_type_id)
 );
 
 CREATE TABLE product_size
 (
   product_id INT NOT NULL,
   size_id INT NOT NULL,
-  amount INT,
+  PRIMARY KEY(product_id, size_id),
   CONSTRAINT fk_ps_prod FOREIGN KEY (product_id) REFERENCES product(product_id),
   CONSTRAINT fk_ps_size FOREIGN KEY (size_id) REFERENCES size(size_id)
 );
@@ -107,11 +81,8 @@ CREATE TABLE goods_received_bill (
   bill_id INT PRIMARY KEY AUTO_INCREMENT,
   staff_id INT NOT NULL,
   date_created DATETIME NOT NULL,
-  bill_status CHAR
-(10) NOT NULL,
-  CONSTRAINT fk_grb_staff FOREIGN KEY
-(staff_id) REFERENCES staff
-(staff_id)
+  bill_status CHAR(10) NOT NULL,
+  CONSTRAINT fk_grb_staff FOREIGN KEY(staff_id) REFERENCES staff(staff_id)
 );
 
 CREATE TABLE received_bill_details
@@ -128,11 +99,8 @@ CREATE TABLE invoice (
   invoice_id INT PRIMARY KEY AUTO_INCREMENT,
   date_created DATETIME NOT NULL,
   customer_id INT NOT NULL,
-  invoice_status CHAR
-(20),
-  CONSTRAINT fk_invoice_customer FOREIGN KEY
-(customer_id) REFERENCES customer
-(customer_id)
+  invoice_status CHAR(20),
+  CONSTRAINT fk_invoice_customer FOREIGN KEY(customer_id) REFERENCES customer(customer_id)
 );
 
 CREATE TABLE invoice_details
@@ -145,9 +113,19 @@ CREATE TABLE invoice_details
   CONSTRAINT fk_invdetail_product FOREIGN KEY (product_id) REFERENCES product(product_id)
 );
 
-INSERT INTO account
-VALUES
-  ("admin", "12345");
+CREATE TABLE tag (
+  tag_id INT PRIMARY KEY AUTO_INCREMENT,
+  tag_name VARCHAR(256)
+);
+
+CREATE TABLE product_tag (
+  product_id INT NOT NULL,
+  tag_id INT NOT NULL,
+  PRIMARY KEY(product_id, tag_id),
+  CONSTRAINT fk_protag_product FOREIGN KEY(product_id) REFERENCES product(product_id),
+  CONSTRAINT fk_protag_tag FOREIGN KEY(tag_id) REFERENCES tag(tag_id)
+);
+
 
 INSERT INTO staff_role
   (role_name)
