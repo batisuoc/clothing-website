@@ -7,7 +7,7 @@ require '../util/Auth.php';
 //Auto load all library class in libs folder
 function __autoload($class)
 {
-    require ADMIN_LIBS . $class . ".php";
+    require LIBS . $class . ".php";
 }
 
 $app = new Bootstrap("../admin/");
